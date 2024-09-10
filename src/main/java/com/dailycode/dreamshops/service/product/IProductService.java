@@ -1,11 +1,12 @@
 package com.dailycode.dreamshops.service.product;
 
 import com.dailycode.dreamshops.model.Product;
+import com.dailycode.dreamshops.request.AddProductRequest;
 
 import java.util.List;
 
 public interface IProductService {
-    Product addProduct(Product product);
+    Product addProduct(AddProductRequest product);
     Product getProductById(Long id);
     void deleteProductById(Long id);
     void updateProduct(Long productId, Product product);
